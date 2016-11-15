@@ -1,4 +1,15 @@
-<ion-tabs>
+
+<!-- menu side a mettre au meme niveau que notre conteneur : ion tabs -->
+<ion-menu side="right" [content]="mycontent">
+  <ion-content>
+    <ion-list>
+      <h1>Menu aside</h1>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- on ajoute l'attachement #mycontent-->
+<ion-tabs #mycontent>
   <ion-tab [root]="tab1Root" tabTitle="places" tabIcon="home"></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="add" tabIcon="text"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="around" tabIcon="stats"></ion-tab>
